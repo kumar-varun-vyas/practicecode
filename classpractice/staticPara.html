@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id="div"></div>
+	<script type="text/javascript">
+		class Car{
+			constructor(brand){
+				this.carname= brand;
+			}
+
+			static hello(x){
+				return "hello!! " + x.carname;
+			}
+
+		}
+		mycar = new Car("ford");
+		document.getElementById("div").innerHTML = Car.hello( mycar);
+	</script>
+
+</body>
+</html>
