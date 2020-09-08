@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<br>
+	<button type="button" onclick="add()"> remove new element</button>
+	<br>
+	<div id="div2"></div>
+
+	<script>
+		var fruits = ['mango', 'orange', 'apple', 'lemon' , 'kivi'];
+		document.getElementById('div1').innerHTML = fruits;
+
+		function add(){
+			fruits.splice(0, 2);
+			document.getElementById('div2').innerHTML = 'new array: <br>'+ fruits;
+		}
+	</script>
+
+</body>
+</html>

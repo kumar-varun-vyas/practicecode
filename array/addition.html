@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="div"></div>
+
+<script>
+var  fruits = ['mango' , ' apple' , 'banana' , 'orange'];
+fruits.push('greaps');
+fruits[5] = 'oats';
+
+document.getElementById('div').innerHTML = fruits.join('*') + '<br>' + fruits.length;
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id='div'></div><br>
+	<button type="button" onclick="button()">try it!</button><br>
+
+	<p id = 'p'></p>
+
+	<script >
+		
+		var arr = ['orange' , 'apple', 'banana'];
+		document.getElementById('div').innerHTML = arr;
+
+		function button(){
+			arr.sort();
+			arr.reverse();
+			document.getElementById('div').innerHTML = arr;
+		}
+	</script>
+
+</body>
+</html>

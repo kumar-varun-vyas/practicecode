@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ 	
+ 	<div id="div1"></div><br>
+
+<div id="div"></div><br>
+<div id="div2"></div><br>
+ 	<script >
+ 		var points = [4,3,65,23,866,34];
+document.getElementById('div1').innerHTML=points;
+ 		document.getElementById('div').innerHTML='max no. is ' +max(points);
+
+ 			document.getElementById('div2').innerHTML='min no. is ' +min(points);
+
+ 		function max(points){
+ 			return Math.max.apply(null, points);
+ 			
+
+ 		} 
+ 			function min(points){
+ 			return Math.min.apply(null, points);
+ 			
+
+ 		} 
+ 	</script>
+</body>
+</html>

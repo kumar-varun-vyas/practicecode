@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ 	<button type="button" onclick="sort()">try it</button><br><br>
+ 	<div id="div"></div>
+ 	<script >
+ 		var points = [4,3,65,23,866,34];
+ 		document.getElementById('div').innerHTML=points;
+
+ 		function sort(){
+ 			points.sort(function(a, b){return 0.5 - Math.random()});
+ 			document.getElementById('div').innerHTML=points;
+
+ 		} 
+ 	</script>
+</body>
+</html>
