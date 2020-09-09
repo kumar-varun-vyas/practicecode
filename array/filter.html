@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id ="div"></div>
+
+	<script>
+		var num = [43, 56, 65,5, 6,3,18];
+		var filter = num.filter(fun);
+
+		document.getElementById("div").innerHTML = filter ; 
+
+		function fun(value){
+			return value >15 ;
+		}
+	</script>
+</body>
+</html>

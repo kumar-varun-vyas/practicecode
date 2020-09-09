@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id='div'></div>
+
+	<script>
+		var num = [3,6,3,5,7];
+		var num1 = num.map(fun);
+
+		document.getElementById('div').innerHTML = num1 ;
+
+		function fun(value){
+			return value * 2 ;
+		}
+	</script>
+</body>
+</html>
